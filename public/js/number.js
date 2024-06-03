@@ -30,4 +30,15 @@ closeBtn.addEventListener("click", () => {
   }
 });
 
+const changeImg = document.querySelectorAll("#changeImg");
+const mainImg = document.getElementById("mainImg");
+
+changeImg.forEach((item, index) => {
+  item.classList.add('cursor-pointer')
+  mainImg.classList.add('cursor-pointer')
+  item.addEventListener("click", () => {
+    mainImg.src = changeImg[index].src;
+  });
+});
+
 console.log("container size:", 1366 - 186 + 32);

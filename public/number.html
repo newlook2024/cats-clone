@@ -183,44 +183,52 @@
         </div>
       </div>
     </header>
-    <section class="md:pt-10 bg-white pb-17.5">
+    <section class="lg:pt-10 md:pt-8 pt-7 pb-6 bg-white md:pb-14 lg:pb-17.5">
       <div
-        class="max-w-[1212px] px-4 mx-auto flex justify-start items-start gap-[70px]"
+        class="max-w-[1212px] px-4 mx-auto flex md:flex-row flex-col justify-start md:items-start gap-10 md:gap-[70px]"
       >
-        <div class="flex items-start justify-start gap-7">
-          <div class="flex flex-col gap-7">
+        <div class="flex md:block items-center justify-center w-full md:max-w-[354px] lg:max-w-[600px]">
+          <div
+            class="flex items-cente lg:flex-row flex-col-reverse md:items-start md:justify-start gap-7"
+          >
+            <div class="flex flex-row lg:flex-col gap-5 lg:gap-7">
+              <img
+                id="changeImg"
+                class="lg:max-w-[70px] w-[104px] object-cover rounded max-h-[78px] flex lg:min-h-[112px] lg:w-full"
+                src="./img/number/cat.png"
+                alt="cat"
+              />
+              <img
+                id="changeImg"
+                class="lg:max-w-[70px] w-[104px] object-cover rounded max-h-[78px] flex lg:min-h-[112px] lg:w-full"
+                src="./img/number/standingCat.png"
+                alt="cat"
+              />
+              <img
+                id="changeImg"
+                class="lg:max-w-[70px] w-[104px] object-cover rounded max-h-[78px] flex lg:min-h-[112px] lg:w-full"
+                src="./img/number/sleepingCat.png"
+                alt="cat"
+              />
+            </div>
             <img
-              class="max-w-[70px] flex min-h-[112px] w-full"
-              src="./img/number/cat.png"
-              alt="cat"
-            />
-            <img
-              class="max-w-[70px] flex min-h-[112px] w-full"
-              src="./img/number/standingCat.png"
-              alt="cat"
-            />
-            <img
-              class="max-w-[70px] flex min-h-[112px] w-full"
-              src="./img/number/sleepingCat.png"
-              alt="cat"
+              id="mainImg"
+              src="./img/katalog/6.png"
+              alt="big cat png"
+              class="lg:max-w-[500px] lg:min-w-[500px] max-w-full object-cover rounded md:max-w-[354px] w-full min-h-[288px] max-h-[288px] lg:min-h-[396px] flex"
             />
           </div>
-          <img
-            src="./img/katalog/6.png"
-            alt="big cat png"
-            class="max-w-[500px] min-h-[396px] flex"
-          />
         </div>
-        <div class="max-w-[300px]">
-          <h1 class="text-black1 md:text-4xl font-bold md:mb-10">Супер-Люкс</h1>
-          <ul class="flex flex-col gap-6 md:mb-5">
+        <div class="md:max-w-[300px] max-w-none">
+          <h1 class="text-black1 text-3xl leading-8 mb-7 md:text-4xl font-bold md:mb-10">Супер-Люкс</h1>
+          <ul class="flex flex-col gap-6 mb-4 md:mb-5">
             <li class="text-black1 text-[16px] leading-3">
               Размеры (ШхГхВ) - 180х160х180 см
             </li>
             <li class="text-black1 text-[16px] leading-3">Площадь - 2,88 м2</li>
             <li class="text-black1 text-[16px] leading-3">Оснащение номера</li>
           </ul>
-          <ul class="flex flex-col gap-3 md:mb-7">
+          <ul class="flex flex-col gap-3 mb-6 md:mb-7">
             <li class="flex leading-5 items-center gap-2 justify-start">
               <div class="w-4 h-3">
                 <svg
@@ -292,14 +300,14 @@
             </li>
           </ul>
 
-          <h3 class="text-black1 md:mb-7 text-[16px] leading-5">
+          <h3 class="text-black1 md:mb-7 mb-7 text-[16px] leading-5">
             Цена за сутки:
             <span class="text-[18px] leading-5 text-black1 font-medium"
               >600₽</span
             >
           </h3>
           <button
-            class="flex pr-2 pl-7 py-2 leading-4 justify-end items-center gap-5 text-[#FFFDFB] font-semibold bg-[#FF7236] rounded-3xl"
+            class="flex pr-2 pl-7 py-2 md:ml-0 leading-4 justify-end items-center gap-5 text-[#FFFDFB] font-semibold bg-[#FF7236] rounded-3xl"
           >
             Забронировать
             <img
@@ -311,7 +319,249 @@
         </div>
       </div>
     </section>
+    <section class="lg:py-17.5 md:py-14 py-9 bg-white">
+      <div class="max-w-[1182] mx-auto px-4">
+        <h2
+          class="text-black1 md:text-4xl text-3xl leading-8 mb-10 font-bold flex justify-center items-center md:mb-14 lg:mb-17.5"
+        >
+          Номер
+        </h2>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="flex flex-col md:flex-row items-center justify-center pt-2"
+              >
+                <div
+                  class="lg:max-w-[600px] md:max-w-[442px] md:min-h-[326px] flex rounded-lg lg:min-h-[404px] object-cover overflow-hidden"
+                >
+                  <img
+                    class="object-cover"
+                    src="./img/home/number/yellowCat.jpg"
+                    alt="yellow cat"
+                  />
+                </div>
+                <div
+                  class="lg:py-10 lg:px-24 p-10 md:-translate-x-12 rounded-lg bg-white"
+                >
+                  <h3
+                    class="text-black1 text-xl leading-[26px] font-medium mb-6 lg:mb-7"
+                  >
+                    Эконом плюс
+                  </h3>
+                  <ul class="md:mb-7 mb-6 flex md:block flex-col gap-4">
+                    <li
+                      class="flex md:mb-4 lg:mb-5 gap-2 items-center justify-start"
+                    >
+                      <div class="w-3 h-3 bg-orange rounded-full flex"></div>
+                      <span
+                        class="text-black1 leading-[11px] lg:leading-5 md:text-[15px] lg:text-[16px]"
+                        >Площадь - 0,90 м2</span
+                      >
+                    </li>
+                    <li
+                      class="flex md:mb-4 lg:mb-5 gap-2 items-center justify-start"
+                    >
+                      <div class="w-3 h-3 bg-orange rounded-full flex"></div>
+                      <span class="text-black1 leading-5 text-[16px]"
+                        >Размеры (ШхГхВ) — 90х100х180 см</span
+                      >
+                    </li>
+                    <li
+                      class="flex md:mg-4 lg: mb-5 gap-2 items-center justify-start"
+                    >
+                      <div class="w-3 h-3 bg-orange rounded-full flex"></div>
+                      <span class="text-black1 leading-5 text-[16px]"
+                        >Цена за сутки: 200₽</span
+                      >
+                    </li>
+                  </ul>
+                  <button
+                    class="flex pr-2 pl-7 py-2 leading-4 justify-end items-center gap-5 text-[#FFFDFB] font-semibold bg-[#FF7236] rounded-3xl"
+                  >
+                    Забронировать
+                    <img
+                      class="w-9 h-9 flex"
+                      src="./img/home/number/paw.svg"
+                      alt="paw"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex flex-col md:flex-row items-center justify-center pt-2"
+              >
+                <div
+                  class="lg:max-w-[600px] md:max-w-[442px] md:min-h-[326px] flex rounded-lg lg:min-h-[404px] object-cover overflow-hidden"
+                >
+                  <img
+                    class="object-cover"
+                    src="./img/home/number/dirtyCat.png"
+                    alt="gray cat"
+                  />
+                </div>
+                <div
+                  class="lg:py-10 lg:px-24 p-10 md:-translate-x-12 rounded-lg bg-white"
+                >
+                  <h3
+                    class="text-black1 text-xl leading-[26px] font-medium mb-6 lg:mb-7"
+                  >
+                    Комфорт
+                  </h3>
+                  <ul class="md:mb-7 mb-6 flex md:block flex-col gap-4">
+                    <li
+                      class="flex md:mb-4 lg:mb-5 gap-2 items-center justify-start"
+                    >
+                      <div class="w-3 h-3 bg-orange rounded-full flex"></div>
+                      <span
+                        class="text-black1 leading-[11px] lg:leading-5 md:text-[15px] lg:text-[16px]"
+                        >Площадь - 0,90 м2</span
+                      >
+                    </li>
+                    <li
+                      class="flex md:mb-4 lg:mb-5 gap-2 items-center justify-start"
+                    >
+                      <div class="w-3 h-3 bg-orange rounded-full flex"></div>
+                      <span class="text-black1 leading-5 text-[16px]"
+                        >Размеры (ШхГхВ) — 90х100х180 см</span
+                      >
+                    </li>
+                    <li
+                      class="flex md:mg-4 lg: mb-5 gap-2 items-center justify-start"
+                    >
+                      <div class="w-3 h-3 bg-orange rounded-full flex"></div>
+                      <span class="text-black1 leading-5 text-[16px]"
+                        >Цена за сутки: 200₽</span
+                      >
+                    </li>
+                  </ul>
+                  <button
+                    class="flex pr-2 pl-7 py-2 leading-4 justify-end items-center gap-5 text-[#FFFDFB] font-semibold bg-[#FF7236] rounded-3xl"
+                  >
+                    Забронировать
+                    <img
+                      class="w-9 h-9 flex"
+                      src="./img/home/number/paw.svg"
+                      alt="paw"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex flex-col md:flex-row items-center justify-center pt-2"
+              >
+                <div
+                  class="lg:max-w-[600px] md:max-w-[442px] md:min-h-[326px] flex rounded-lg lg:min-h-[404px] object-cover overflow-hidden"
+                >
+                  <img
+                    class="object-cover"
+                    src="./img/home/number/grayCat.png"
+                    alt="gray cat"
+                  />
+                </div>
+                <div
+                  class="lg:py-10 lg:px-24 p-10 md:-translate-x-12 rounded-lg bg-white"
+                >
+                  <h3
+                    class="text-black1 text-xl leading-[26px] font-medium mb-6 lg:mb-7"
+                  >
+                    Сьют
+                  </h3>
+                  <ul class="md:mb-7 mb-6 flex md:block flex-col gap-4">
+                    <li
+                      class="flex md:mb-4 lg:mb-5 gap-2 items-center justify-start"
+                    >
+                      <div class="w-3 h-3 bg-orange rounded-full flex"></div>
+                      <span
+                        class="text-black1 leading-[11px] lg:leading-5 md:text-[15px] lg:text-[16px]"
+                        >Площадь - 0,90 м2</span
+                      >
+                    </li>
+                    <li
+                      class="flex md:mb-4 lg:mb-5 gap-2 items-center justify-start"
+                    >
+                      <div class="w-3 h-3 bg-orange rounded-full flex"></div>
+                      <span class="text-black1 leading-5 text-[16px]"
+                        >Размеры (ШхГхВ) — 90х100х180 см</span
+                      >
+                    </li>
+                    <li
+                      class="flex md:mg-4 lg: mb-5 gap-2 items-center justify-start"
+                    >
+                      <div class="w-3 h-3 bg-orange rounded-full flex"></div>
+                      <span class="text-black1 leading-5 text-[16px]"
+                        >Цена за сутки: 200₽</span
+                      >
+                    </li>
+                  </ul>
+                  <button
+                    class="flex pr-2 pl-7 py-2 leading-4 justify-end items-center gap-5 text-[#FFFDFB] font-semibold bg-[#FF7236] rounded-3xl"
+                  >
+                    Забронировать
+                    <img
+                      class="w-9 h-9 flex"
+                      src="./img/home/number/paw.svg"
+                      alt="paw"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div
+          class="lg:flex hidden items-center gap-2.5 relative z-50 justify-end top-7 w-[80%]"
+        >
+          <button
+            class="before rounded-full w-9 h-9 flex items-center justify-center"
+          >
+            <svg
+              width="6"
+              height="10"
+              viewBox="0 0 6 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.00049 1L1.00049 5L5.00049 9"
+                stroke="#FF7236"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            class="after rounded-full w-9 h-9 flex items-center justify-center"
+          >
+            <svg
+              width="6"
+              height="10"
+              viewBox="0 0 6 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.00049 9L5.00049 5L1.00049 1"
+                stroke="#FF7236"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="./js/number.js"></script>
   </body>
 </html>
