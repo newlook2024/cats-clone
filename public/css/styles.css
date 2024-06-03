@@ -501,6 +501,39 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
 .fixed {
   position: fixed;
 }
@@ -601,11 +634,20 @@ video {
 .h-\[580px\] {
   height: 580px;
 }
+.min-h-\[112px\] {
+  min-height: 112px;
+}
 .min-h-\[522px\] {
   min-height: 522px;
 }
 .min-h-full {
   min-height: 100%;
+}
+.min-h-\[\] {
+  min-height: ;
+}
+.min-h-\[396px\] {
+  min-height: 396px;
 }
 .w-11 {
   width: 2.75rem;
@@ -649,6 +691,9 @@ video {
 .max-w-\[1192px\] {
   max-width: 1192px;
 }
+.max-w-\[1212px\] {
+  max-width: 1212px;
+}
 .max-w-\[1300px\] {
   max-width: 1300px;
 }
@@ -682,6 +727,9 @@ video {
 .max-w-\[400px\] {
   max-width: 400px;
 }
+.max-w-\[70px\] {
+  max-width: 70px;
+}
 .max-w-\[798px\] {
   max-width: 798px;
 }
@@ -690,6 +738,9 @@ video {
 }
 .max-w-\[992px\] {
   max-width: 992px;
+}
+.max-w-\[500px\] {
+  max-width: 500px;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -747,6 +798,9 @@ video {
 }
 .gap-7 {
   gap: 1.75rem;
+}
+.gap-\[70px\] {
+  gap: 70px;
 }
 .gap-x-7 {
   -moz-column-gap: 1.75rem;
@@ -860,6 +914,9 @@ video {
 .\!pb-17\.5 {
   padding-bottom: 70px !important;
 }
+.pb-17\.5 {
+  padding-bottom: 70px;
+}
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -929,6 +986,9 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-\[18px\] {
+  font-size: 18px;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -970,6 +1030,9 @@ video {
 }
 .leading-\[9px\] {
   line-height: 9px;
+}
+.leading-3 {
+  line-height: .75rem;
 }
 .text-\[\#353433\] {
   --tw-text-opacity: 1;
@@ -1043,6 +1106,10 @@ video {
 
   .md\:mb-\[60px\] {
     margin-bottom: 60px;
+  }
+
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
   }
 
   .md\:block {
@@ -1176,6 +1243,10 @@ video {
 
   .md\:leading-\[62px\] {
     line-height: 62px;
+  }
+
+  .md\:leading-3 {
+    line-height: .75rem;
   }
 }
 @media (min-width: 1024px) {
