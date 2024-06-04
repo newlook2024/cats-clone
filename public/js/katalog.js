@@ -96,7 +96,7 @@ let cardInfo = [
     price: "600₽",
   },
 ];
-const cardBox = document.getElementById('cardBox')
+const cardBox = document.getElementById("cardBox");
 
 cardInfo.forEach((item, index) => {
   let box = document.createElement("div");
@@ -151,6 +151,21 @@ cardInfo.forEach((item, index) => {
 </div>
   `;
 
-  cardBox.appendChild(box)
-  
+  cardBox.appendChild(box);
+});
+
+const modalFilter = document.getElementById("modaFilter");
+const closeFilter = document.getElementById("filterClose");
+const blur = document.querySelector(".blur");
+const filterBtn = document.getElementById("filterBtn");
+
+closeFilter.addEventListener("click", () => {
+  blur.style.display = "none";
+  modalFilter.classList.add("hidden");
+});
+
+filterBtn.addEventListener("click", () => {
+  modalFilter.classList.remove('hidden')
+  modalFilter.classList.add('block')
+  blur.style.display = 'flex'
 });

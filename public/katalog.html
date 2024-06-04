@@ -190,7 +190,7 @@
             Наши номера
           </h1>
           <div class="flex md:justify-end justify-between gap-7">
-            <button
+            <button id="filterBtn"
               class="flex items-center lg:translate-y-2 justify-between py-3 px-5 lg:hidden bg-white rounded-3xl"
               style="box-shadow: 0px 2px 12px 0px #ad988f2e"
             >
@@ -787,6 +787,377 @@
         </div>
       </div>
     </footer>
+    <MODALS>
+      <div class="blur lg:hidden hidden"></div>
+      <div
+        id="modaFilter"
+        class="absolute top-0 lg:hidden hidden left-0 px-4 w-full pt-[136px]"
+      >
+        <div
+          style="box-shadow: 0px 4px 25px 0px #99999940"
+          class="mx-auto w-full max-w-[280px] bg-white relative pt-5 px-5 rounded-md flex flex-col min-h-[825px]"
+        >
+          <div
+            id="filterClose"
+            class="w-[14px] h-[14px] flex items-center ml-auto cursor-pointer mb-6 justify-center"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1L15 15M15 1L1 15"
+                stroke="#1A212F"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="w-full block max-w-[210px]">
+            <h3 class="font-medium text-black1 text-[16px] leading-5 mb-5">
+              Цена за сутки, ₽
+            </h3>
+            <div class="flex items-center mb-7 gap-2.5 justify-start">
+              <span
+                class="text-[14px] w-full leading-4 text-black1 py-2 px-1 border-2 border-[#E1E1E1]"
+                >от 100</span
+              >
+              <span
+                class="text-[14px] w-full leading-4 text-black1 py-2 px-1 border-2 border-[#E1E1E1]"
+                >до 600</span
+              >
+            </div>
+            <ul class="flex flex-col mb-9 gap-4">
+              <h3 class="font-medium text-black1 text-[16px] leading-5 mb-1">
+                Площадь
+              </h3>
+              <li
+                id="checkInput"
+                class="flex items-center gap-2.5 justify-start"
+              >
+                <div
+                  id="checkbox"
+                  class="w-5 h-5 flex cursor-pointer items-center border-2 border-[#e1e1e1] justify-center"
+                >
+                  <svg
+                    id="checked"
+                    class="hidden"
+                    width="11"
+                    height="8"
+                    viewBox="0 0 11 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 3.25L4.46154 7L10 1"
+                      stroke="#141312"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <span class="text-black1 leading-4 text-[14px]">0,90 м2</span>
+              </li>
+              <li
+                id="checkInput"
+                class="flex items-center gap-2.5 justify-start"
+              >
+                <div
+                  id="checkbox"
+                  class="w-5 h-5 flex cursor-pointer items-center border-2 border-[#e1e1e1] justify-center"
+                >
+                  <svg
+                    id="checked"
+                    class="hidden"
+                    width="11"
+                    height="8"
+                    viewBox="0 0 11 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 3.25L4.46154 7L10 1"
+                      stroke="#141312"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <span class="text-black1 leading-4 text-[14px]">0,63 м2</span>
+              </li>
+              <li
+                id="checkInput"
+                class="flex items-center gap-2.5 justify-start"
+              >
+                <div
+                  id="checkbox"
+                  class="w-5 h-5 cursor-pointer flex items-center border-2 border-[#e1e1e1] justify-center"
+                >
+                  <svg
+                    id="checked"
+                    class="hidden"
+                    width="11"
+                    height="8"
+                    viewBox="0 0 11 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 3.25L4.46154 7L10 1"
+                      stroke="#141312"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <span class="text-black1 leading-4 text-[14px]">1,13 м2</span>
+              </li>
+              <li
+                id="checkInput"
+                class="flex items-center gap-2.5 justify-start"
+              >
+                <div
+                  id="checkbox"
+                  class="w-5 h-5 cursor-pointer flex items-center border-2 border-[#e1e1e1] justify-center"
+                >
+                  <svg
+                    id="checked"
+                    class="hidden"
+                    width="11"
+                    height="8"
+                    viewBox="0 0 11 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 3.25L4.46154 7L10 1"
+                      stroke="#141312"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <span class="text-black1 leading-4 text-[14px]">1,56 м2</span>
+              </li>
+              <li
+                id="checkInput"
+                class="flex items-center gap-2.5 justify-start"
+              >
+                <div
+                  id="checkbox"
+                  class="w-5 h-5 cursor-pointer flex items-center border-2 border-[#e1e1e1] justify-center"
+                >
+                  <svg
+                    id="checked"
+                    class="hidden"
+                    width="11"
+                    height="8"
+                    viewBox="0 0 11 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 3.25L4.46154 7L10 1"
+                      stroke="#141312"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <span class="text-black1 leading-4 text-[14px]">2,56 м2</span>
+              </li>
+              <li
+                id="checkInput"
+                class="flex items-center gap-2.5 justify-start"
+              >
+                <div
+                  id="checkbox"
+                  class="w-5 h-5 cursor-pointer flex items-center border-2 border-[#e1e1e1] justify-center"
+                >
+                  <svg
+                    id="checked"
+                    class="hidden"
+                    width="11"
+                    height="8"
+                    viewBox="0 0 11 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 3.25L4.46154 7L10 1"
+                      stroke="#141312"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <span class="text-black1 leading-4 text-[14px]">2,88 м2</span>
+              </li>
+            </ul>
+            <ul class="flex flex-col mb-9 gap-4">
+              <h3 class="font-medium text-black1 text-[16px] leading-5 md:mb-1">
+                Оснащение номера
+              </h3>
+              <li
+                id="checkInput"
+                class="flex items-center gap-2.5 justify-start"
+              >
+                <div
+                  id="checkbox"
+                  class="w-5 h-5 flex cursor-pointer items-center border-2 border-[#e1e1e1] justify-center"
+                >
+                  <svg
+                    id="checked"
+                    class="hidden"
+                    width="11"
+                    height="8"
+                    viewBox="0 0 11 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 3.25L4.46154 7L10 1"
+                      stroke="#141312"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <span class="text-black1 leading-4 text-[14px]"
+                  >Пустой номер</span
+                >
+              </li>
+              <li
+                id="checkInput"
+                class="flex items-center gap-2.5 justify-start"
+              >
+                <div
+                  id="checkbox"
+                  class="w-5 h-5 flex cursor-pointer items-center border-2 border-[#e1e1e1] justify-center"
+                >
+                  <svg
+                    id="checked"
+                    class="hidden"
+                    width="11"
+                    height="8"
+                    viewBox="0 0 11 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 3.25L4.46154 7L10 1"
+                      stroke="#141312"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <span class="text-black1 leading-4 text-[14px]">Лежак</span>
+              </li>
+              <li
+                id="checkInput"
+                class="flex items-center gap-2.5 justify-start"
+              >
+                <div
+                  id="checkbox"
+                  class="w-5 h-5 cursor-pointer flex items-center border-2 border-[#e1e1e1] justify-center"
+                >
+                  <svg
+                    id="checked"
+                    class="hidden"
+                    width="11"
+                    height="8"
+                    viewBox="0 0 11 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 3.25L4.46154 7L10 1"
+                      stroke="#141312"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <span class="text-black1 leading-4 text-[14px]"
+                  >Когтеточка</span
+                >
+              </li>
+              <li
+                id="checkInput"
+                class="flex items-center gap-2.5 justify-start"
+              >
+                <div
+                  id="checkbox"
+                  class="w-5 h-5 cursor-pointer flex items-center border-2 border-[#e1e1e1] justify-center"
+                >
+                  <svg
+                    id="checked"
+                    class="hidden"
+                    width="11"
+                    height="8"
+                    viewBox="0 0 11 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 3.25L4.46154 7L10 1"
+                      stroke="#141312"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <span class="text-black1 leading-4 text-[14px]"
+                  >Игровой-комплекс</span
+                >
+              </li>
+              <li
+                id="checkInput"
+                class="flex items-center gap-2.5 justify-start"
+              >
+                <div
+                  id="checkbox"
+                  class="w-5 h-5 cursor-pointer flex items-center border-2 border-[#e1e1e1] justify-center"
+                >
+                  <svg
+                    id="checked"
+                    class="hidden"
+                    width="11"
+                    height="8"
+                    viewBox="0 0 11 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 3.25L4.46154 7L10 1"
+                      stroke="#141312"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <span class="text-black1 leading-4 text-[14px]">Домик</span>
+              </li>
+            </ul>
+            <button
+              class="border-2 w-full text-[14px] justify-center mb-4 leading-[10px] text-black1 font-semibold bg-orange border-[#FAC663] px-9 py-4 rounded-3xl flex"
+            >
+              Подобрать
+            </button>
+            <button
+              class="border-2 w-full justify-center text-[14px] leading-[10px] text-black1 font-semibold border-[#FAC663] px-9 py-4 rounded-3xl flex"
+            >
+              Сбросить фильтр
+            </button>
+          </div>
+        </div>
+      </div>
+    </MODALS>
 
     <script src="./js/katalog.js"></script>
   </body>
