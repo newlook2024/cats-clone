@@ -34,7 +34,7 @@ closeBtn.addEventListener("click", () => {
 
 const checkbox = document.querySelectorAll("#checkbox");
 const checked = document.querySelectorAll("#checked");
-const checkInput = document.querySelectorAll("#checkInput");
+const checkInput = document.querySelectorAll(".checkInput");
 
 checkbox.forEach((item, index) => {
   item.addEventListener("click", () => {
